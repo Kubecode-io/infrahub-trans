@@ -7,3 +7,12 @@ python_transforms:
 queries:
   - name: tags_query
     file_path: "tags_query.gql"
+
+artifact_definitions:
+  - name: "tags_config_file"
+    artifact_name: "Tags configuration file"
+    parameters:
+      tag: "name__value"
+    content_type: "text/plain"
+    targets: "TagConfigGroup"
+    transformation: "my-transform"
